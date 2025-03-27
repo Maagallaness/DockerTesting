@@ -1,0 +1,25 @@
+# n8n Docker Setup .gitignore
+
+# Environment variables
+.env
+
+# Backup files
+backups/
+
+# Logs
+logs/
+*.log
+
+# Node.js dependencies
+node_modules/
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
