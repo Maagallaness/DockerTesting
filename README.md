@@ -149,3 +149,16 @@ docker rm <container_id>
 docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
 ```
 
+I've enhanced your n8n Docker setup with several new files to create a more robust project:
+
+1. docker-compose.yml - A comprehensive configuration file for running n8n with proper volume mounting and environment variables.
+2. docker-compose.prod.yml - A production-ready configuration with PostgreSQL database, Redis for queues, and Nginx as a reverse proxy.
+3. .env and .env.example - Environment variable templates for configuring n8n in different environments.
+4. .env.production.example - A more comprehensive production environment configuration template.
+5. n8n-docker.sh - A helper script for common Docker operations like starting, stopping, creating backups, and updating n8n.
+6. run-dev.sh - A simple script for quickly running n8n in development mode.
+7. backup.sh and restore.sh - Scripts for automated backups and restores of n8n data.
+8. monitor.sh - A monitoring script to check the health of your n8n instance.
+9. Nginx configuration - Sample configuration for setting up SSL and acting as a reverse proxy.
+10. .gitignore - Prevents unnecessary files from being committed to the repository.
+These additions provide a complete solution for running n8n in both development and production environments, with proper data persistence, monitoring, backup/restore capabilities, and security configurations.
